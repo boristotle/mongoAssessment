@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>The Everything Store</h1>
+       <% products[1].forEach(function(productType){ %>
+          <h2><%= productType.type %></h2>
+        <%  }) %>
+
+        <% products[0].forEach(function(item){ %>
+          <li><%= item.item %></li>
+        <% }) %>
+
+
+    
+        
+        
+  </body>
+</html>

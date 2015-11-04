@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>The Everything Store</h1>
+    <% product.forEach(function(product){ %>
+      <a href='store/<%= product.type %>'><h2><%= product.type %></h2></a>
+    <%  }) %><br>
+     <form action='/store' method='post'>
+      <p><label>Add a Product</label></p>
+        <select name='type'>
+      <option value='562a684ac10cdea34c92b37b'>Produce</option>
+      <option value='562a6824c10cdea34c92b378'>Cereal</option>
+      <option value='562a683ec10cdea34c92b37a'>Dairy</option>
+      <option value='562a682fc10cdea34c92b379'>Household</option>
+    </select>
+    <p><label for='item'>Item</label></p>
+    <input type='text' id='item' name='item'>
+    <p><input type='submit' value="Submit"></p>
+    </form>
+  </body>
+</html>
